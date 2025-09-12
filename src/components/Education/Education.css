@@ -1,0 +1,224 @@
+/* Section */
+.education-section {
+  padding: 6rem 12vw;
+  font-family: sans-serif;
+
+  /* Background Gradient */
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+@media (min-width: 768px) {
+  .education-section {
+    padding: 6rem 7vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .education-section {
+    padding: 6rem 16vw;
+  }
+}
+
+/* Section Title */
+.education-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.education-title h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+@media (min-width: 640px) {
+  .education-title h2 {
+    font-size: 4rem;
+  }
+}
+
+.title-underline {
+  width: 8rem;
+  height: 0.25rem;
+  background-color: #a855f7; /* purple-500 */
+  margin: 1rem auto 0;
+}
+
+.education-title p {
+  color: #9ca3af;
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+/* Timeline */
+.education-timeline {
+  position: relative;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  background-color: #ffffff;
+  height: 100%;
+  z-index: 1;
+  border-radius: 2px;
+}
+
+/* Education Entry */
+.education-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+@media (min-width: 640px) {
+  .education-entry {
+    flex-direction: row;
+  }
+}
+
+.left-entry {
+  justify-content: flex-start;
+}
+
+.right-entry {
+  justify-content: flex-end;
+}
+
+/* Timeline Circle */
+.timeline-circle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 4px solid #8245ec;
+  background-color: #9ca3af;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+@media (min-width: 640px) {
+  .timeline-circle {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+.timeline-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Education Card */
+.education-card {
+  background-color: rgba(30, 30, 30, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  border: 1px solid white;
+  padding: 1rem 2rem;
+  max-width: 24rem;
+  margin-top: 3rem;
+  transform: transition;
+  transition: transform 0.3s;
+}
+
+.education-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+@media (min-width: 640px) {
+  .left-entry .education-card {
+    margin-left: 6rem;
+  }
+  .right-entry .education-card {
+    margin-right: 6rem;
+  }
+}
+
+/* Card Content */
+.education-card-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.school-logo {
+  width: 6rem;
+  height: 4rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.school-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.education-text h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+}
+
+.education-text h4 {
+  font-size: 0.875rem;
+  color: #d1d5db;
+}
+
+.education-text p {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  margin-top: 0.5rem;
+}
+
+/* Grade and Description */
+.grade {
+  margin-top: 1rem;
+  color: #9ca3af;
+  font-weight: 600;
+}
+
+.description {
+  margin-top: 1rem;
+  color: #9ca3af;
+}
+
+/* ---------------- Mobile Fix ---------------- */
+@media (max-width: 639px) {
+  .timeline-line {
+    left: 2rem;         /* line ko side me le gya */
+    transform: none;
+  }
+
+  .timeline-circle {
+    left: 2rem;         /* circle bhi line ke sath */
+    transform: none;
+  }
+
+  .education-entry {
+    align-items: flex-start;  /* sab left align */
+    padding-left: 5rem;       /* line aur circle ke liye jagah */
+  }
+
+  .education-card {
+    margin-top: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

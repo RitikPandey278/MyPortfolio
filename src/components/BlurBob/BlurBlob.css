@@ -1,0 +1,31 @@
+.blur-blob-container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.blur-blob {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(168 85 247); /* Tailwind purple-500 */
+  border-radius: 9999px;
+  opacity: 0.2;
+  filter: blur(64px); /* blur-3xl */
+  animation: blob 7s infinite;
+}
+
+/* Agar tumhare tailwind me "animate-blob" defined hai toh use karna
+   warna neeche keyframes apne CSS me define kiye hain */
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}

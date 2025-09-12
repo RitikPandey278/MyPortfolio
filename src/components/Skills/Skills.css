@@ -1,0 +1,112 @@
+.skills-section {
+  padding: 80px 10vw;
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at top, #1a1a2e, #0f0f1a 70%, #050414 100%);
+  color: #fff;
+}
+
+/* Section Header */
+.skills-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.skills-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.divider {
+  width: 80px;
+  height: 4px;
+  background: #8245ec;
+  margin: 10px auto;
+  border-radius: 2px;
+  box-shadow: 0 0 15px #8245ec;
+}
+
+.skills-header p {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #bbb;
+  font-weight: 500;
+}
+
+/* Grid for skill categories */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.skill-box {
+  background: rgba(25, 25, 35, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 0 25px 2px rgba(130, 69, 236, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px 3px rgba(130, 69, 236, 0.4);
+}
+
+.skill-box h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ccc;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Items inside each category */
+.skills-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.03);
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+  border-color: #8245ec;
+  background: rgba(130, 69, 236, 0.1);
+  transform: translateY(-5px) scale(1.03);
+}
+
+.skill-logo {
+  width: 22px;
+  height: 22px;
+}
+
+.skill-item span {
+  font-size: 0.9rem;
+  color: #eee;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .skills-items {
+    grid-template-columns: 1fr 1fr;
+  }
+}
