@@ -92,7 +92,7 @@
 
 /* Project Image */
 .project-image img {
-  width: 100%;
+  width: 90%;
   height: 9rem;
   object-fit: cover;
   border-radius: 0.75rem;
@@ -153,6 +153,9 @@
   background-color: #1e1e1e;
   border-radius: 1rem;
   overflow: hidden;
+  overflow-y: auto;   /* 👈 scroll enable */
+  max-height: 90vh;
+
   max-width: 60rem;
   width: 90%;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
