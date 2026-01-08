@@ -34,6 +34,7 @@ import BD from './education_logo/BD.png';
 // ✅ Project Section Logo's
 import Fooddel from './work_logo/Fooddel.png';
 import Organic from './work_logo/Organic.jpg';
+import AgriAid from './work_logo/AgriAid.png';
 
 
 // ======================= SKILLS =======================
@@ -118,7 +119,10 @@ export const experiences = [
       "APIs",
     ],
   },
+
+  
 ];
+
 
 // ======================= EDUCATION =======================
 export const education = [
@@ -180,7 +184,18 @@ export const projects = [
     image: Organic,
     tags: ["XML", "Java", "Firebase", "Sqlite", "APIs"],
     github: " https://github.com/RitikPandey278/Organic-food-Delivery-App.git",
-    webapp: "",
+    webapp: "https://drive.google.com/file/d/1foYmVcxDrw3fj7sUzlcZJVrW5v-_d-tD/view?usp=drive_link",
+  },
+
+  {
+    id: 3,
+    title: "AgriAid-AI Based Agriculture Assistant",
+    description:
+      "Developed a web applicationfocusedonagriculture solutions tohelp farmers Monitor crop, AI DetectionDiseases,Weather Update and Agriculture Knowledge and Blogs",
+    image: AgriAid,
+    tags: ["HTML", "CSS", "javaScript", "Tailwind", "React JS", "Node JS", "Express.js", "MongoDB", "AI"],
+    github: " https://github.com/RitikPandey278/AgriAid-AI",
+    webapp: "https://mellow-smakager-a976e5.netlify.app/",
   },
   
 ];
