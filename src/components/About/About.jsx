@@ -36,7 +36,7 @@ const About = () => {
           </p>
 
           <a
-            href="https://drive.google.com/file/d/11WRQ5IyBJt8e3BJF5Mo-6RdAFmSlV38A/view?usp=sharing"
+            href="https://drive.google.com/file/d/1em5tKy6GPvJD7n7sxRNqREJB9mgCC6G0/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="resume-btn"

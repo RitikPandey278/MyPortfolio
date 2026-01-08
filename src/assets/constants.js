@@ -35,7 +35,7 @@ import BD from './education_logo/BD.png';
 import Fooddel from './work_logo/Fooddel.png';
 import Organic from './work_logo/Organic.jpg';
 import AgriAid from './work_logo/AgriAid.png';
-import Watshap from './work_logo/watshap.png';
+import Whatsapp from './work_logo/watshap.png';
 
 // ======================= SKILLS =======================
 export const SkillsInfo = [
@@ -201,8 +201,8 @@ export const projects = [
     id: 4,
     title: "Watshap Clone",
     description:
-      "This is a simple chat application backend built using Node.js and Express.js. It provides APIs to create, fetch, and delete messages, following a clean MVC structure with proper routing and controllers.",
-    image: Watshap,
+      "This is a simple chat application backend built using Node.js and Express.js. It provides APIs to create, fetch, and delete messages, following a clean MVC structure with proper routing and controllers.(Working Phase)",
+    image: Whatsapp,
     tags: ["HTML", "CSS", "javaScript",  "React JS", "Node JS", "Express.js", "MongoDB"],
     github: " https://github.com/RitikPandey278/whatsapp-clone",
     webapp: "https://shiny-marzipan-460c62.netlify.app/",
